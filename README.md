@@ -31,7 +31,7 @@ Part1, Part2 강좌를 합쳐서 책으로 냈습니다.
 - 에디터가 필수가 됨. VS Code나 웹스톰 반드시 필요. 메모장으로 코딩 불가능한 지경에 이름.
 
 ## ts 문법
-- 기본적으로 변수, 속성, 매개변수, 리턴값에 타입이 붙었다고 생각하면 됨.
+- 기본적으로 변수, 속성, 매개변수, 리턴값에 타입이 붙었다고 생각하면 됨.(type은 모두 소문자여야함)
 ```typescript
 const a: number = 5;
 function add(x: number, y: number): number { return x + y }
