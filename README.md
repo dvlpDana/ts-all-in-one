@@ -32,10 +32,16 @@ Part1, Part2 강좌를 합쳐서 책으로 냈습니다.
 
 ## ts 문법
 - 기본적으로 변수, 속성, 매개변수, 리턴값에 타입이 붙었다고 생각하면 됨.(type은 모두 소문자여야함)
+- type을 지웠을 때, 말이 되는 코드여야 함(ex. const add = (x, y) => x+ y
 ```typescript
 const a: number = 5;
-function add(x: number, y: number): number { return x + y }
+function add(x: number, y: number): number { return x + y } // function일때는 : , 화살표 함수일때는 =>
 const add: (x: number, y: number) => number = (x, y) => x + y;
+type Add = (x: number, y: number) => number; // type alias
+interface Add {
+  (x: number, y: number): number; // type interface
+}
+const add : Add = (x, y) => x + y
 const obj: { lat: number, lon: number } = { lat: 37.5, lon: 127.5 };
 ```
 - 특수한 타입 {} (null과 undefined가 아닌 모든 타입)
